@@ -11,14 +11,14 @@ const LeafletRoutingMachine = () => {
     iconSize: [90, 90],
   });
   useEffect(() => {
-    var marker1 = L.marker([36.8065, 10.1815], { icon: DefaultIcon }).addTo(
+    var marker1 = L.marker([10.964112, 106.856461], { icon: DefaultIcon }).addTo(
       map
     );
     map.on("click", function (e) {
       L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
       L.Routing.control({
         waypoints: [
-          L.latLng(36.8065, 10.1815),
+          L.latLng(10.964112, 106.856461),
           L.latLng(e.latlng.lat, e.latlng.lng),
         ],
         lineOptions: {

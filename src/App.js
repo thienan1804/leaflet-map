@@ -7,7 +7,7 @@ import LeafletGeocoder from "./LeafletGeocoder";
 import LeafletRoutingMachine from "./LeafletRoutingMachine";
 
 function App() {
-  const position = [36.8065, 10.1815];
+  const position = [10.964112, 106.856461];
   return (
     <div className="App">
       <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
