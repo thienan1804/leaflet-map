@@ -32,7 +32,7 @@ const LeafletRoutingMachine = () => {
         },
         routeWhileDragging: false,
         geocoder: L.Control.Geocoder.nominatim(),
-        addWaypoints: false,
+        addWaypoints: true,
         draggableWaypoints: false,
         fitSelectedRoutes: true,
         showAlternatives: true,
