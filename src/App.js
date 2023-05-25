@@ -9,6 +9,7 @@ import LeafletGeocoder from "./LeafletGeocoder";
 import LeafletRoutingMachine from "./LeafletRoutingMachine";
 import { useMapEvents } from "react-leaflet";
 import { useRef, useState } from "react";
+import DrawLocation from "./DrawLocation";
 
 function App() {
   const position = [10.964112, 106.856461];
@@ -41,9 +42,10 @@ function App() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <LeafletGeocoder />
-        {viewLocation && <LocationMarker />}
-        <Polygon pathOptions={fillBlueOptions} positions={polygon} />
-        {/* <LeafletRoutingMachine /> */}
+        {/* {viewLocation && <LocationMarker />} */}
+        {/* <DrawLocation /> */}
+        {/* <Polygon pathOptions={fillBlueOptions} positions={polygon} /> */}
+        <LeafletRoutingMachine />
 
       </MapContainer>
     </div>
